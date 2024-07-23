@@ -1,4 +1,4 @@
-# DetectFacialAbnormalities
+# Facial Abnormalities Detection
 
 ## Overview
 
