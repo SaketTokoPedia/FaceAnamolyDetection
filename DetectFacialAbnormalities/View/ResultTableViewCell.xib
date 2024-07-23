@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCell" rowHeight="188" id="KGk-i7-Jjw" customClass="ResultTableViewCell" customModule="DetectFacialAbnormalities" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="188"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="188"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xP6-Je-Q2D">
+                        <rect key="frame" x="8" y="24" width="120" height="140"/>
+                        <constraints>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="9wK-uB-4Ot"/>
+                            <constraint firstAttribute="height" constant="140" id="b0l-uH-GRb"/>
+                            <constraint firstAttribute="width" constant="120" id="iBf-fy-6FY"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzh-HQ-04w">
+                        <rect key="frame" x="152" y="40" width="199" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TMH-xq-mE9">
+                        <rect key="frame" x="152" y="81" width="179" height="76"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="TMH-xq-mE9" firstAttribute="top" secondItem="tzh-HQ-04w" secondAttribute="bottom" constant="20" id="Cza-72-FXO"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TMH-xq-mE9" secondAttribute="bottom" constant="20" id="EGR-fT-R88"/>
+                    <constraint firstItem="xP6-Je-Q2D" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="GEA-Kg-wFc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="TMH-xq-mE9" secondAttribute="trailing" constant="10" id="HPN-Rd-KA4"/>
+                    <constraint firstAttribute="trailing" secondItem="tzh-HQ-04w" secondAttribute="trailing" constant="10" id="Jxz-ch-W7b"/>
+                    <constraint firstItem="xP6-Je-Q2D" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="TGj-fT-h8R"/>
+                    <constraint firstAttribute="bottom" secondItem="xP6-Je-Q2D" secondAttribute="bottom" constant="24" id="c2I-rf-5GK"/>
+                    <constraint firstItem="TMH-xq-mE9" firstAttribute="leading" secondItem="xP6-Je-Q2D" secondAttribute="trailing" constant="24" id="hU7-yN-mLV"/>
+                    <constraint firstItem="tzh-HQ-04w" firstAttribute="leading" secondItem="xP6-Je-Q2D" secondAttribute="trailing" constant="24" id="idt-5p-ukR"/>
+                    <constraint firstItem="tzh-HQ-04w" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="40" id="uLy-cT-DSK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="abnormalityLabel" destination="TMH-xq-mE9" id="Y2r-wS-VXp"/>
+                <outlet property="selfieImageView" destination="xP6-Je-Q2D" id="8J2-Tu-KnL"/>
+                <outlet property="statusLabel" destination="tzh-HQ-04w" id="OBL-lg-qsp"/>
+            </connections>
+            <point key="canvasLocation" x="170.22900763358777" y="70.422535211267615"/>
+        </tableViewCell>
+    </objects>
+</document>
