@@ -23,7 +23,7 @@ The app is structured using the MVVM (Model-View-ViewModel) pattern:
 ### Prerequisites
 
 - Xcode 12.0 or later
-- iOS 13.0 or later
+- iOS 15.0 or later
 
 ### Installation
 
